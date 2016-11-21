@@ -60,7 +60,7 @@ create table graduates (
 
 -- Select the students and the term and grades when they first took CS490.
 
-insert into cohorts select id, code, term, year, symbol, value  from (
+insert into graduates select id, code, term, year, symbol, value  from (
     select u.id, c.code, s.term, s.term/10+1900 as year, g.symbol,
         coalesce(g.value,0) as value,
         rank() over (partition by u.id order by s.term) as pos
