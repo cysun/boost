@@ -1,0 +1,16 @@
+# Database information
+db.url=jdbc:postgresql://localhost/csns2
+db.username=cysun
+db.password=abcd
+
+# Output folder
+output.dir=D:/Temp/boost
+
+# The time period we want to study. Note that the data before 2006 or after
+# 2011 may not be complete.
+year.start=2006
+year.end=2011
+
+# Comma delimited attributes and classes. Do NOT include any space
+attributes=CS120,CS122,CS201,CS202,CS203,CS245
+classes=CS490,CS491A,CS496A
